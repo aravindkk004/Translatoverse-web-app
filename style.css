@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: #f4f7fe;
+    --blue-color: blue;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+nav .left img{
+    height: 50px;
+    /* width: 200px; */
+}
+.right{
+    display: flex;
+}
+.right a{
+    margin: 0px 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+}
+.right a:hover{
+    background-color: var(--blue-color);
+    color: white;
+}
+.login{
+    color: var(--blue-color);
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--blue-color);
+}
+.signup{
+    background-color: var(--blue-color);
+    color: white;
+}
+.login i, .signup i{
+    margin-right: 10px;
+}
+#home{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/bg-img.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.leftmain,.rightmain{
+    flex-basis: 50%;
+}
+.leftmain{
+    padding-left: 30px;
+}
+.leftmain p{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.leftmain span{
+    color: blueviolet;
+}
+.leftmain a{
+    background-color: var(--blue-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.leftmain a i{
+    margin-left: 10px;
+}
+#feedback{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png"); */
+}
+#feedback span{
+    color: var(--blue-color);
+}
+#feedback h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.feedbacks{
+    display: flex;
+    flex-wrap: wrap;
+}
+.leftfeedback,.rightfeedback{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightfeedback form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.rightfeedback form input, .rightfeedback form textarea{
+    margin: 20px 0px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 60%;
+    outline: none;
+    font-size: 1.1rem;
+}
+textarea{
+    height: 150px;
+    resize: none;
+}
+.rightfeedback button{
+    padding: 10px 20px;
+    background-color: var(--blue-color);
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: none;
+    width: 60%;
+}
+.rightfeedback button i{
+    margin-left: 10px;
+}
+footer{
+    background-color: #212529;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+}
+.leftfooter,.rightfooter{
+    flex-basis: 50%;
+}
+.app img{
+    height: 150px;
+}
+.leftfooter{
+    padding-left: 100px;
+}
+.leftfooter p{
+    margin: 20px 0px;
+    color: white;
+    font-size: 1.3rem;
+}
+.leftfooter p i{
+    margin: 0px 10px;
+}
+/* .leftfooter p i{
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: grey;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+} */
+.rightfooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rightfooter h5{
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 20px;
+}
+.icons a{
+    margin: 0px 20px ;
+}
+.app{
+    margin-top: 40px;
+}
+#copyright{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#offer{
+    background-color: var(--bg-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background-image: url("https://www.transparenttextures.com/patterns/candyhole.png");
+}
+#offer h2{
+    font-size: 2.5rem;
+}
+#offer span{
+    color: var(--blue-color);
+}
+.offers{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+}
+.offers div{
+    background-color: white;
+    border-radius: 10px;
+    min-width: 300px;
+    padding: 15px;
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.offers div .details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+.offers div i{
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.offers div i:hover{
+    background-color: var(--blue-color);
+    color: white;
+}
+.offers div span{
+    font-size: 3rem;
+    background-color: var(--bg-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media all and (max-width: 1111px){
+    .rightmain{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rightmain img{
+        height: 300px;
+    }
+    .leftfeedback img{
+        height: 350px;
+    }
+}
+@media all and (max-width: 807px){
+    .rightfeedback,.leftfeedback{
+        flex-basis: 100%;
+    }
+    #feedback h2{
+        margin-top: 100px;
+    }
+    .rightfeedback{
+        margin-bottom: 100px;
+    }
+    .leftfooter{
+        padding: 0;
+    }
+}
+@media all and (max-width: 850px){
+    #home{
+        padding-top: 60px;
+    }
+    .leftmain p{
+        font-size: 1.8rem;
+    }
+    .leftmain a{
+        font-size: 1rem;
+    }
+}
+@media all and (max-width: 735px){
+    .leftmain,.rightmain{
+        flex-basis: 100%;
+    }
+    .leftmain{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media all and (max-width:720px){
+    .leftfooter,.rightfooter{
+        flex-basis: 100%;
+    }
+    .leftfooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0px;
+    }
+    .leftmain{
+        padding: 0;
+    }
+    #home{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+@media all and (max-width: 650px){
+    .right a,.left a{
+        font-size: 1rem;
+    }
+    #feedback h2{
+        font-size: 1.8rem;
+    }
+    #offer h2{
+        font-size: 1.8rem;
+    }
+}
+@media all and (max-width:550px){
+    .leftmain p{
+        font-size: 1.5rem;
+    }
+}
+@media all and (max-width:520px){
+    .right a p{
+        display: none;
+    }
+    .right a i{
+        margin: 0;
+    }
+    .leftfeedback img{
+        height: 250px;
+    }
+    .rightfeedback form input,.rightfeedback form textarea,.rightfeedback button{
+        width: 80%;
+    }
+    .leftmain p{
+        text-align: center;
+    }
+    .leftfooter p{
+        font-size: 1rem;
+    }
+    .rightfooter h5{
+        font-size: 1.2rem;
+    }
+}
+@media all and (max-width: 420px){
+    nav{
+        padding: 10px;
+    }
+    .rightmain img{
+        height: 250px;
+    }
+    .leftmain{
+        padding: 0;
+    }
+    footer{
+        padding: 0px;
+    }
+    #feedback h2{
+        font-size: 1.8rem;
+    }
+    .right a{
+        margin: 0px;
+    }
+    nav .left img{
+        height: 40px;
+    }
+}
+@media all and (max-width: 370px){
+    .leftmain p, .leftmain a{
+        font-size: 1.5rem;
+    }
+    .rightmain img{
+        width: 250px;
+    }
+}
+@media all and (max-width: 320px){
+    .leftfooter p{
+        font-size: 0.8rem;
+    }
+    #copyright{
+        font-size: 1rem;
+    }
+}
